@@ -1,18 +1,20 @@
+package com.example;
+
 
 public class reloj{
 
     private String material;
-    private boolean alarma;
+    private static boolean alarma;
 
     public reloj(String material, boolean alarma){
         this.material=material;
-        this.alarma=alarma;
+        reloj.alarma=alarma;
     }
 
-    public void sonarAlarma(Lampara lampara){
+    public static void sonarAlarma(lampara lampara){
         if (alarma==true){
             System.out.println("¡Ring!");
-            lampara.encenderLampara(); //Método que enciende la lámpara cuando suena el reloj
+            com.example.lampara.encenderLampara(); //Método que enciende la lámpara cuando suena el reloj
         }
         else{
             System.out.println("El reloj no tiene alarma");

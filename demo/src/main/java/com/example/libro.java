@@ -1,19 +1,21 @@
+package com.example;
 
-public class libro{
-
-    private String titulo;
-    private String autor;
+    public class libro {
+    
+        
+    private static String titulo;
+    private static String autor;
     private int paginas;
-    private boolean leer;
+    private static boolean leer;
 
-    public libro(String tirulo, String autor, int paginas, boolean leer){
-        this.titulo=titulo;
-        this.autor=autor;
+    public libro(String titulo, String autor, int paginas, boolean leer){
+        libro.titulo=titulo;
+        libro.autor=autor;
         this.paginas=paginas;
-        this.leer=leer;
+        libro.leer=leer;
     }
 
-    public void leerLibro(lampara Lampara){
+    public static void leerLibro(lampara Lampara){
         if(leer==true){
         System.out.println("Estás leyendo el libro "+titulo+" de "+autor);
         lampara.encenderLampara();//encender lámpara uando se quiera leer
@@ -27,4 +29,4 @@ public class libro{
         System.out.println("Objeto destruido");
     }
 
-}
+    }

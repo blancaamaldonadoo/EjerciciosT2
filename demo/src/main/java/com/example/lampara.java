@@ -7,19 +7,21 @@ interacción entre estos objetos (como encender la lámpara cuando suena el relo
 3. Simulación de Interacción entre Objetos
  */
 
+ package com.example;
+ 
  public class lampara { //clase Lampara con atributos privados
-    private boolean encendida;
+    private static boolean encendida;
     private String tipoLuz;
     private int bombillas;
 
-    public Lampara (boolean encendida, String tipoLuz, int bombillas){ //constructor de la clase
-        this.encendida= encendida; //this se refiere a la instancia de la clase (objeto)
+    public lampara (boolean encendida, String tipoLuz, int bombillas){ //constructor de la clase
+        lampara.encendida= encendida; //this se refiere a la instancia de la clase (objeto)
         this.tipoLuz=tipoLuz;
         this.bombillas=bombillas; 
     }
 
-    public void encenderLampara(){ //método público que enciende la lámpara
-        encendida=true; //cambia el valor de la variable encendida a true
+    public static void encenderLampara(){ //método público que enciende la lámpara
+        lampara.encendida=true; //cambia el valor de la variable encendida a true
     }
 
     public void apagarLampara(){ //método público que apaga la lámpara
