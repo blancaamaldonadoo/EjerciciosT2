@@ -4,7 +4,7 @@ Diseño de Clases Avanzado: Elige tres objetos de la lista creada en el ejercici
 lenguaje de programación orientado a objetos de tu elección, asegurándote de incorporar atributos privados,
 métodos públicos, constructores, y destructores. Además, implementa métodos que demuestren la 
 interacción entre estos objetos (como encender la lámpara cuando suena el reloj). 
-3. Simulación de Interacción entre Objetos
+
  */
 
  package com.example;
