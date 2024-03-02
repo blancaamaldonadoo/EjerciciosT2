@@ -20,7 +20,15 @@ public class reloj{
             System.out.println("El reloj no tiene alarma");
         }
     }
-
+    public void apagarAlarma(libro libro){
+        if (alarma==true){
+            System.out.println("Alarma apagada");
+            
+        }
+        else{
+            System.out.println("El reloj no tiene alarma");
+        }
+    }
     protected void finalize() throws Throwable{
         System.out.println("Objeto destruido");
     }
